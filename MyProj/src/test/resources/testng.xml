@@ -1,0 +1,14 @@
+<suite name="yahoo">
+  <test name="tst_ff">
+  <parameter name="browser" value="firefox" />
+  <classes>
+    <class name="yahoo.Test_prog" />
+  </classes>
+  </test>
+   <test name="tst_ie">
+  <parameter name="browser" value="ie" />
+  <classes>
+    <class name="yahoo.Test_prog" />
+  </classes>
+  </test>
+</suite>
