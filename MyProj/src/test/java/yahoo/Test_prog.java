@@ -17,7 +17,10 @@ public class Test_prog
 		if(br.matches("firefox"))
 			driver=new FirefoxDriver();
 		if(br.matches("ie"))
-			driver=new InternetExplorerDriver();	
+		{
+		    System.setProperty("webdriver.ie.driver","d:\\IEDriverServer.exe");	
+			driver=new InternetExplorerDriver();
+		}
 		
 		Home hm=new Home(driver);
 		hm.validate_links();
